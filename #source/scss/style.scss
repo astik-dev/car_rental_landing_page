@@ -126,6 +126,12 @@ h1 {
 		}
 		&__button-link {
 			background-color: #FF8A00;
+			transition: all 0.3s ease;	
+
+			&:active {
+				background-color: transparent;
+				color: #FF8A00;
+			}
 		}
 	}
 
@@ -156,6 +162,23 @@ h1 {
 			text-transform: uppercase;
 			color: #ffffff;
 			text-shadow: 0px 0px 5px #000;
+			position: relative;
+		}
+		&__item a:after {
+			content: "";
+			width: 100%;
+			height: 1px;
+			position: absolute;
+			background-color: #FF8A00;
+			top: 24px;
+			left: 0px;
+			transform: scale(0, 1);
+			transition: all 0.2s ease;	
+		}
+		&__item:active {
+			a:after {
+				transform: scale(1, 1);	
+			}
 		}
 	}
 
@@ -172,5 +195,28 @@ h1 {
 		font-size: 14px;
 		line-height: 28px;
 		color: #fff;
+	}
+}
+
+
+
+// ================= @media (hover: hover) =================
+@media (hover: hover) {
+	.wrapper {
+
+		.header {
+			&__button-link:hover {
+				background-color: transparent;
+				color: #FF8A00;
+			}
+		}
+
+		.menu {
+			&__item:hover {
+				a:after {
+					transform: scale(1, 1);	
+				}
+			}
+		}
 	}
 }
