@@ -199,8 +199,6 @@ h2 {
 }
 .wrapper .header__button-link {
 	background-color: #FF8A00;
-	-webkit-transition: all 0.3s ease;
-	transition: all 0.3s ease;
 }
 .wrapper .header__button-link:active {
 	background-color: transparent;
@@ -282,6 +280,8 @@ h2 {
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 28px;
@@ -389,10 +389,19 @@ h2 {
 	text-transform: uppercase;
 	color: #FF8A00;
 	margin: 20px 0 0 0;
+	-webkit-transition: all 0.15s linear;
+	transition: all 0.15s linear;
+}
+.wrapper .main .description__link:active {
+	color: #FFF;
 }
 .wrapper .main .description__button-link {
 	margin: 140px 0 0 0;
 	background-color: #FF8A00;
+}
+.wrapper .main .description__button-link:active {
+	background-color: transparent;
+	color: #FF8A00;
 }
 
 @media (hover: hover) {
@@ -403,6 +412,13 @@ h2 {
 	.wrapper .menu__item:hover a:after {
 		-webkit-transform: scale(1, 1);
 		        transform: scale(1, 1);
+	}
+	.wrapper .main .description__button-link:hover {
+		background-color: transparent;
+		color: #FF8A00;
+	}
+	.wrapper .main .description__link:hover {
+		color: #FFF;
 	}
 }
 @media (min-height: 461px) {
