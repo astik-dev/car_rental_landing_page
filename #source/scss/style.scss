@@ -20,6 +20,13 @@ h1 {
 	font-weight: 700;
 	text-transform: uppercase;
 }
+h2 {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 44px;
+	text-transform: uppercase;
+	color: #FF8A00;
+}
 
 
 
@@ -199,6 +206,114 @@ h1 {
 		font-size: 14px;
 		line-height: 28px;
 		color: #fff;
+	}
+
+	// ================= main =================
+	.main {
+		background-color: #0E0E0E;
+
+		&__container {
+			position: relative;
+			.watermark {
+				position: absolute;
+				
+				color: #0E0E0E;
+				text-shadow: 2px 0px 2px #FF8A00, -2px 0px 2px #FF8A00, 0px -2px 2px #FF8A00, 0px 2px 2px #FF8A00;
+				font-weight: 700;
+				font-size: 288px;
+				opacity: 0.3;
+				writing-mode: vertical-rl;
+
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				z-index: 1;
+
+				&:nth-child(1) {
+					top: 108px;
+					right: 43px;
+				}
+				&:nth-child(2) {
+					top: 492px;
+					left: 43px;
+				}
+			/*	&:nth-child(3) {
+					top: 2961px;
+					right: 43px;
+				}*/
+			}
+		}
+		// ================= main__description =================
+		.description {
+			padding: 180px 0 180px 0;
+			display: flex;
+			flex-direction: column;
+			gap: 180px 0;
+			position: relative;	
+			z-index: 2;	
+
+			&__item {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 0px 20px;
+				justify-items: center;	
+				align-items: center;
+			}
+			&__title,
+			&__subtitle,
+			&__text {
+				max-width: 665px;
+			}
+			&__subtitle {
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 40px;
+				text-transform: uppercase;
+			}
+			&__text {
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 40px;
+				text-transform: uppercase;
+				margin: 40px 0 0 0;
+			}
+			&__image {
+				max-height: 760px;
+				width: 100%;
+				position: relative;	
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+
+				&:after {
+					content: "";
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+					background-color: rgba(0,0,0,0.25);
+				}
+			}
+			&__link {
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 40px;
+				text-decoration-line: underline;
+				text-transform: uppercase;
+				color: #FF8A00;
+				margin: 20px 0 0 0;
+			}
+			&__button-link {
+				margin: 140px 0 0 0;
+				background-color: #FF8A00;
+			}
+		}
 	}
 }
 
