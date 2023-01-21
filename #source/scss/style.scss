@@ -7,6 +7,7 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 	color: #ffffff;
+	overflow-x: hidden;
 }
 
 [class*="__container"] {
@@ -109,7 +110,7 @@ h2 {
 		&__container {
 			height: 100%;
 			position: relative;
-			z-index: 1;
+			z-index: 3;
 			padding: 0 80px 0 82px; 
 		}
 		&__body {
@@ -149,6 +150,7 @@ h2 {
 		justify-content: space-between;
 		align-items: center;
 		padding: 40px 0 0 0;
+
 		&__logo {
 			font-size: 24px;
 			text-transform: uppercase;
@@ -220,7 +222,8 @@ h2 {
 				color: #0E0E0E;
 				text-shadow: 2px 0px 2px #FF8A00, -2px 0px 2px #FF8A00, 0px -2px 2px #FF8A00, 0px 2px 2px #FF8A00;
 				font-weight: 700;
-				font-size: 288px;
+				//font-size: 288px;
+				font-size: 15vw;
 				opacity: 0.3;
 				writing-mode: vertical-rl;
 
@@ -232,12 +235,14 @@ h2 {
 				z-index: 1;
 
 				&:nth-child(1) {
-					top: 108px;
-					right: 43px;
+					//top: 108px;
+					top: 1.67598%;
+					right: 2.239583%;
 				}
 				&:nth-child(2) {
-					top: 492px;
-					left: 43px;
+					//top: 492px;
+					top: 7.63501%;
+					left: 2.239583%;
 				}
 			/*	&:nth-child(3) {
 					top: 2961px;
@@ -258,13 +263,17 @@ h2 {
 				display: grid;
 				grid-template-columns: 1fr 1fr;
 				gap: 0px 20px;
-				justify-items: center;	
 				align-items: center;
 			}
-			&__title,
-			&__subtitle,
-			&__text {
-				max-width: 665px;
+			&__text-box-right {
+				justify-self: right;
+				max-width: 772px; // 665 + 82 + 25
+				padding: 0 82px 0 25px;
+			}
+			&__text-box-left {
+				justify-self: left;
+				max-width: 770px; // 665 + 80 + 25
+				padding: 0 25px 0 80px;
 			}
 			&__subtitle {
 				font-weight: 500;
@@ -281,8 +290,10 @@ h2 {
 			}
 			&__image {
 				max-height: 760px;
+				height: 100%;
 				width: 100%;
-				position: relative;	
+				position: relative;
+				background: url("../img/loading.gif") center center no-repeat;
 
 				img {
 					width: 100%;
@@ -402,11 +413,30 @@ h2 {
 				gap: 0px 75px;
 			}
 		}
+		.main {
+			.description {
+				padding: 150px 0 150px 0;
+				gap: 150px 0;
+				&__text-box-right {
+					padding: 0 62px 0 25px;
+				}
+				&__text-box-left {
+					padding: 0 25px 0 60px;
+				}
+				&__button-link {
+					margin: 100px 0 0 0;
+				}
+			}
+		}
 	}
 }
 
 // ================= @media (max-width: 1199px) =================
 @media (max-width: 1199px) {
+	h2 {
+		font-size: 32px;
+		line-height: 38px;
+	}
 	.wrapper {
 		.header {
 			.swiper-pagination {
@@ -421,6 +451,28 @@ h2 {
 				gap: 0px 60px;
 			}
 		}
+		.main {
+			.description {
+				padding: 120px 0 120px 0;
+				gap: 120px 0;
+				&__text-box-right {
+					padding: 0 46px 0 20px;
+				}
+				&__text-box-left {
+					padding: 0 20px 0 45px;
+				}
+				&__button-link {
+					margin: 35px 0 0 0;
+				}
+				&__text {
+					line-height: 32px;
+					margin: 25px 0 0 0;
+				}
+				&__subtitle {
+					line-height: 34px;
+				}
+			}
+		}
 	}
 }
 
@@ -430,6 +482,10 @@ h2 {
 	h1 {
 		font-size: 40px;
 		line-height: 50px;
+	}
+	h2 {
+		font-size: 26px;
+		line-height: 32px;
 	}
 
 	.wrapper {
@@ -456,6 +512,28 @@ h2 {
 		.menu {
 			&__items {
 				gap: 0px 50px;
+			}
+		}
+		.main {
+			.description {
+				padding: 90px 0 90px 0;
+				gap: 90px 0;
+				&__text-box-right {
+					padding: 0 32px 0 5px;
+				}
+				&__text-box-left {
+					padding: 0 5px 0 30px;
+				}
+				&__button-link {
+					margin: 20px 0 0 0;
+				}
+				&__text {
+					line-height: 32px;
+					margin: 15px 0 0 0;
+				}
+				&__subtitle {
+					line-height: 28px;
+				}
 			}
 		}
 	}
@@ -503,8 +581,9 @@ h2 {
 				gap: 0;
 				width: 202px;
 				height: 100vh;
+				width: 0px;
 				top: 0px;
-				right: -250px;
+				right: 0px;
 				background-color: #000;
 				border-top: 75px solid #000;
 				border-left: 1px solid rgba(255, 138, 0, 0.3);
@@ -512,6 +591,8 @@ h2 {
 				z-index: 15;
 				overflow-y: auto;
 				transition: all 0.2s ease;	
+				opacity: 0;
+				visibility: hidden;
 			}
 			&__item a {
 				display: block;
@@ -572,12 +653,37 @@ h2 {
 				}
 			}
 		}
+
+		.main {
+			.description {
+				padding: 50px 0 50px 0;
+				gap: 50px 0;
+				&__text-box-right {
+					padding: 0 20px 0 0;
+				}
+				&__text-box-left {
+					padding: 0 0 0 20px;
+				}
+				&__button-link {
+					margin: 15px 0 0 0;
+				}
+				&__text {
+					line-height: 28px;
+					margin: 15px 0 0 0;
+				}
+				&__subtitle {
+					line-height: 24px;
+				}
+			}
+		}
 	}
 	._open-burger-menu {
 		overflow-y: hidden;
 		.wrapper {
 			.menu__items {
-				right: 0;
+				width: 202px;
+				opacity: 1;
+				visibility: visible;
 			}
 			.menu__burger {
 				span:nth-child(2) {
@@ -616,6 +722,10 @@ h2 {
 		font-size: 26px;
 		line-height: 35px;
 	}
+	h2 {
+		font-size: 20px;
+		line-height: 32px;
+	}
 	.wrapper {
 		.header {
 			height: 500px;
@@ -646,6 +756,65 @@ h2 {
 		}
 		.menu {
 			padding: 15px 0 0 0;
+		}
+
+		.main {
+			.description {
+				padding: 60px 0 60px 0;
+				gap: 60px 0;
+
+				&__item {
+					grid-template-columns: 1fr;
+					gap: 10px 0px;
+					justify-items: center;
+					text-align: center;
+				}
+				&__item_reverse {
+					grid-template-areas: "image" "text";
+					.description__text-box-left {
+						 grid-area: text;
+					}
+					.description__image {
+						grid-area: image;
+					}
+				}
+				&__item_title {
+					.description__title {
+						text-align: center;
+					}
+				}
+				&__text-box-right {
+					justify-self: center;
+					padding: 0 15px 0 15px;
+				}
+				&__text-box-left {
+					justify-self: center;
+					padding: 0 15px 0 15px;
+				}
+				&__button-link {
+					margin: 15px 0 0 0;
+				}
+				&__text {
+					line-height: 28px;
+					margin: 1px 0 0 0;
+					text-align: justify;	
+				}
+				&__title {
+					text-align: left;
+				}
+				&__subtitle {
+					line-height: 28px;
+					text-align: justify;
+				}
+				&__link {
+					margin: 15px 0 0 0;
+					text-align: left;
+				}
+				&__image {
+					border-left: 15px solid #0E0E0E;
+					border-right: 15px solid #0E0E0E;
+				}
+			}
 		}
 	}
 }
