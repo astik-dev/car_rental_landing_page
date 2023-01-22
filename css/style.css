@@ -414,6 +414,35 @@ h2 {
 	background-color: transparent;
 	color: #FF8A00;
 }
+.wrapper .main .swiper-1 {
+	padding: 0 0 180px 0;
+}
+.wrapper .main .swiper-1__slide {
+	position: relative;
+	padding-bottom: 27.3%;
+	background: url("../img/loading.gif") center center no-repeat;
+}
+.wrapper .main .swiper-1__slide:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.wrapper .main .swiper-1__slide img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+.wrapper .main .swiper-1__container {
+	padding: 0 82px 0 80px;
+}
 
 @media (hover: hover) {
 	.wrapper .header__button-link:hover {

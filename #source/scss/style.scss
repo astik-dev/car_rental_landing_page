@@ -335,6 +335,36 @@ h2 {
 				}
 			}
 		}
+		.swiper-1 {
+			padding: 0 0 180px 0;
+			&__slide {
+				position: relative;
+				padding-bottom: 27.3%;
+				background: url("../img/loading.gif") center center no-repeat;
+
+				&:after {
+					content: "";
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+					background-color: rgba(0,0,0,0.3);
+				}
+
+				img {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+			&__container {
+				padding: 0 82px 0 80px;
+			}
+		}
 	}
 }
 
