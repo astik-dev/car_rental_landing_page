@@ -370,15 +370,13 @@ h2 {
 
 		// ================= main__motivational-text =================
 		.motivational-text {
-			padding: 0 82px 0 80px;
+			padding: 68px 82px 68px 80px;
 			text-align: center;
 			text-transform: uppercase;
 			display: flex;
 			flex-direction: column;
 			gap: 22px;
 			align-items: center;
-			justify-content: center;
-			height: 260px;
 			
 			&__title {
 				font-weight: 700;
@@ -494,6 +492,13 @@ h2 {
 					padding: 0 62px 0 60px;
 				}
 			}
+			.motivational-text {
+				padding: 60px 62px 60px 60px;
+				gap: 20px;
+				&__text {
+					max-width: 590px;
+				}
+			}
 		}
 	}
 }
@@ -547,6 +552,18 @@ h2 {
 				}
 				&__container {
 					padding: 0 46px 0 45px;
+				}
+			}
+			.motivational-text {
+				padding: 52px 46px 52px 45px;
+				gap: 18px;
+				
+				&__title {
+					line-height: 21px;
+				}
+				&__text {
+					line-height: 36px;
+					max-width: 555.63px;
 				}
 			}
 		}
@@ -620,6 +637,18 @@ h2 {
 				}
 				&__container {
 					padding: 0 32px 0 30px;
+				}
+			}
+			.motivational-text {
+				padding: 44px 32px 44px 30px;
+				gap: 16px;
+				
+				&__title {
+					line-height: 20px;
+				}
+				&__text {
+					line-height: 32px;
+					max-width: 498.56px;
 				}
 			}
 		}
@@ -772,6 +801,18 @@ h2 {
 					padding: 0 20px 0 20px;
 				}
 			}
+			.motivational-text {
+				padding: 36px 32px 36px 30px;
+				gap: 14px;
+				
+				&__title {
+					line-height: 19px;
+				}
+				&__text {
+					line-height: 28px;
+					max-width: 444.16px;
+				}
+			}
 		}
 	}
 	._open-burger-menu {
@@ -920,6 +961,18 @@ h2 {
 				}
 				&__container {
 					padding: 0 15px 0 15px;
+				}
+			}
+			.motivational-text {
+				padding: 28px 32px 28px 30px;
+				gap: 12px;
+				
+				&__title {
+					line-height: 18px;
+				}
+				&__text {
+					line-height: 24px;
+					max-width: 279.98px;
 				}
 			}
 		}

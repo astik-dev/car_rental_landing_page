@@ -444,7 +444,7 @@ h2 {
 	padding: 0 82px 0 80px;
 }
 .wrapper .main .motivational-text {
-	padding: 0 82px 0 80px;
+	padding: 68px 82px 68px 80px;
 	text-align: center;
 	text-transform: uppercase;
 	display: -webkit-box;
@@ -458,10 +458,6 @@ h2 {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	height: 260px;
 }
 .wrapper .main .motivational-text__title {
 	font-weight: 700;
@@ -534,6 +530,13 @@ h2 {
 	.wrapper .main .swiper-1__container {
 		padding: 0 62px 0 60px;
 	}
+	.wrapper .main .motivational-text {
+		padding: 60px 62px 60px 60px;
+		gap: 20px;
+	}
+	.wrapper .main .motivational-text__text {
+		max-width: 590px;
+	}
 }
 @media (max-width: 1199px) {
 	h2 {
@@ -577,6 +580,17 @@ h2 {
 	}
 	.wrapper .main .swiper-1__container {
 		padding: 0 46px 0 45px;
+	}
+	.wrapper .main .motivational-text {
+		padding: 52px 46px 52px 45px;
+		gap: 18px;
+	}
+	.wrapper .main .motivational-text__title {
+		line-height: 21px;
+	}
+	.wrapper .main .motivational-text__text {
+		line-height: 36px;
+		max-width: 555.63px;
 	}
 }
 @media (max-width: 991px) {
@@ -637,6 +651,17 @@ h2 {
 	}
 	.wrapper .main .swiper-1__container {
 		padding: 0 32px 0 30px;
+	}
+	.wrapper .main .motivational-text {
+		padding: 44px 32px 44px 30px;
+		gap: 16px;
+	}
+	.wrapper .main .motivational-text__title {
+		line-height: 20px;
+	}
+	.wrapper .main .motivational-text__text {
+		line-height: 32px;
+		max-width: 498.56px;
 	}
 }
 @media (max-width: 767px) {
@@ -787,6 +812,17 @@ h2 {
 	.wrapper .main .swiper-1__container {
 		padding: 0 20px 0 20px;
 	}
+	.wrapper .main .motivational-text {
+		padding: 36px 32px 36px 30px;
+		gap: 14px;
+	}
+	.wrapper .main .motivational-text__title {
+		line-height: 19px;
+	}
+	.wrapper .main .motivational-text__text {
+		line-height: 28px;
+		max-width: 444.16px;
+	}
 	._open-burger-menu {
 		overflow-y: hidden;
 	}
@@ -923,6 +959,17 @@ h2 {
 	}
 	.wrapper .main .swiper-1__container {
 		padding: 0 15px 0 15px;
+	}
+	.wrapper .main .motivational-text {
+		padding: 28px 32px 28px 30px;
+		gap: 12px;
+	}
+	.wrapper .main .motivational-text__title {
+		line-height: 18px;
+	}
+	.wrapper .main .motivational-text__text {
+		line-height: 24px;
+		max-width: 279.98px;
 	}
 }
 @media (max-width: 575px){
