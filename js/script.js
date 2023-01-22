@@ -61,6 +61,17 @@ const mainSwiper1 = new Swiper(".swiper-1__container", {
 	},
 });
 
+// Main swiper-2
+const mainSwiper2 = new Swiper(".swiper-2_container", {
+	pagination: {
+		el: ".swiper-2__pagination",
+		clickable: true,
+	},
+	grabCursor: true,
+	resistanceRatio: 0,
+});
+const mainSwiper2Container = document.querySelector(".swiper-2");
+
 
 
 const menu = document.querySelector(".menu__items");
@@ -91,6 +102,9 @@ window.addEventListener("resize", function (event) {
 	if (body.classList.contains("_open-burger-menu")) {
 		menu.style.height = window.innerHeight + window.pageYOffset + "px";
 	}
+
+	// Main swiper-2 "left" value
+	mainSwiper2LeftValue();
 });
 
 
@@ -108,8 +122,20 @@ const lazyImagesObserver = new IntersectionObserver(
 		});
 	},
 	{
-		rootMargin: "50px 0px 0px 0px",
+		rootMargin: "50px 0px 0px 50px",
 	},
 );
 
 lazyImages.forEach(image => lazyImagesObserver.observe(image));
+
+
+
+// Main swiper-2 "left" value
+function mainSwiper2LeftValue() {
+	if (window.innerWidth >= 1920) {
+		mainSwiper2Container.style.left = ((window.innerWidth - 1920) / 2) * (-1) + "px";
+	} else {
+		mainSwiper2Container.style.left = "0px";
+	}
+}
+mainSwiper2LeftValue();
