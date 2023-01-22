@@ -621,6 +621,11 @@ h2 {
 					max-width: 555.63px;
 				}
 			}
+			.swiper-2 {
+				.swiper-pagination {
+					bottom: 50px;
+				}
+			}
 		}
 	}
 }
@@ -704,6 +709,13 @@ h2 {
 				&__text {
 					line-height: 32px;
 					max-width: 498.56px;
+				}
+			}
+			.swiper-2 {
+				height: 570px;
+
+				.swiper-pagination {
+					bottom: 45px;
 				}
 			}
 		}
@@ -868,6 +880,13 @@ h2 {
 					max-width: 444.16px;
 				}
 			}
+			.swiper-2 {
+				height: 450px;
+
+				.swiper-pagination {
+					bottom: 30px;
+				}
+			}
 		}
 	}
 	._open-burger-menu {
@@ -1028,6 +1047,13 @@ h2 {
 				&__text {
 					line-height: 24px;
 					max-width: 279.98px;
+				}
+			}
+			.swiper-2 {
+				height: 325px;
+
+				.swiper-pagination {
+					bottom: 15px;
 				}
 			}
 		}

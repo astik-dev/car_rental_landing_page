@@ -642,6 +642,9 @@ h2 {
 		line-height: 36px;
 		max-width: 555.63px;
 	}
+	.wrapper .main .swiper-2 .swiper-pagination {
+		bottom: 50px;
+	}
 }
 @media (max-width: 991px) {
 	h1 {
@@ -712,6 +715,12 @@ h2 {
 	.wrapper .main .motivational-text__text {
 		line-height: 32px;
 		max-width: 498.56px;
+	}
+	.wrapper .main .swiper-2 {
+		height: 570px;
+	}
+	.wrapper .main .swiper-2 .swiper-pagination {
+		bottom: 45px;
 	}
 }
 @media (max-width: 767px) {
@@ -873,6 +882,12 @@ h2 {
 		line-height: 28px;
 		max-width: 444.16px;
 	}
+	.wrapper .main .swiper-2 {
+		height: 450px;
+	}
+	.wrapper .main .swiper-2 .swiper-pagination {
+		bottom: 30px;
+	}
 	._open-burger-menu {
 		overflow-y: hidden;
 	}
@@ -1020,6 +1035,12 @@ h2 {
 	.wrapper .main .motivational-text__text {
 		line-height: 24px;
 		max-width: 279.98px;
+	}
+	.wrapper .main .swiper-2 {
+		height: 325px;
+	}
+	.wrapper .main .swiper-2 .swiper-pagination {
+		bottom: 15px;
 	}
 }
 @media (max-width: 575px){
