@@ -394,7 +394,7 @@ h2 {
 		// ================= main__swiper-2 =================
 		.swiper-2 {
 			background-color: #0E0E0E;	
-			position: absolute;
+			position: relative;
 			width: 100vw;
 			height: 100vh;
 
@@ -443,6 +443,23 @@ h2 {
 			.swiper-pagination-bullet-active {
 				background-color: #FFFFFF;
 				border: 0px;
+			}
+		}
+
+		// ================= main__last-text =================
+		.last-text {
+			padding: 180px 82px 180px 80px;
+			display: grid;
+			grid-template-columns: 1fr 1fr;	
+			gap: 0 20px;
+
+			&__title {
+				max-width: 550px;
+			}
+			&__text{
+				font-weight: 500;
+				line-height: 40px;
+				text-transform: uppercase;
 			}
 		}
 	}

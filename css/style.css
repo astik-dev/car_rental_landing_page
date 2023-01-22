@@ -472,7 +472,7 @@ h2 {
 }
 .wrapper .main .swiper-2 {
 	background-color: #0E0E0E;
-	position: absolute;
+	position: relative;
 	width: 100vw;
 	height: 100vh;
 }
@@ -519,6 +519,22 @@ h2 {
 .wrapper .main .swiper-2 .swiper-pagination-bullet-active {
 	background-color: #FFFFFF;
 	border: 0px;
+}
+.wrapper .main .last-text {
+	padding: 180px 82px 180px 80px;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 20px 1fr;
+	grid-template-columns: 1fr 1fr;
+	gap: 0 20px;
+}
+.wrapper .main .last-text__title {
+	max-width: 550px;
+}
+.wrapper .main .last-text__text {
+	font-weight: 500;
+	line-height: 40px;
+	text-transform: uppercase;
 }
 
 @media (hover: hover) {
