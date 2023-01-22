@@ -335,6 +335,8 @@ h2 {
 				}
 			}
 		}
+
+		// ================= main__swiper-1 =================
 		.swiper-1 {
 			padding: 0 0 180px 0;
 			&__slide {
@@ -363,6 +365,31 @@ h2 {
 			}
 			&__container {
 				padding: 0 82px 0 80px;
+			}
+		}
+
+		// ================= main__motivational-text =================
+		.motivational-text {
+			padding: 0 82px 0 80px;
+			text-align: center;
+			text-transform: uppercase;
+			display: flex;
+			flex-direction: column;
+			gap: 22px;
+			align-items: center;
+			justify-content: center;
+			height: 260px;
+			
+			&__title {
+				font-weight: 700;
+				font-size: 18px;
+				line-height: 22px;
+			}
+			&__text {
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 40px;
+				max-width: 870px;
 			}
 		}
 	}

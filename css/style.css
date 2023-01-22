@@ -443,6 +443,37 @@ h2 {
 .wrapper .main .swiper-1__container {
 	padding: 0 82px 0 80px;
 }
+.wrapper .main .motivational-text {
+	padding: 0 82px 0 80px;
+	text-align: center;
+	text-transform: uppercase;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	gap: 22px;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	height: 260px;
+}
+.wrapper .main .motivational-text__title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+}
+.wrapper .main .motivational-text__text {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 40px;
+	max-width: 870px;
+}
 
 @media (hover: hover) {
 	.wrapper .header__button-link:hover {
