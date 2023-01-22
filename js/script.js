@@ -29,6 +29,36 @@ const mainSwiper1 = new Swiper(".swiper-1__container", {
 	freeMode: {
 		momentum: false,
 	},
+	resistanceRatio: 0,
+	breakpoints: {
+		// when window width is >= 1px
+		1: {
+			slidesPerView: 1.0345,
+			spaceBetween: 10,
+		},
+		// when window width is >= 576px
+		576: {
+			slidesPerView: 1.2,
+			spaceBetween: 15,
+		},
+		// when window width is >= 768px
+		768: {
+			slidesPerView: 1.4,
+			spaceBetween: 20,
+		},
+		// when window width is >= 992px
+		992: {
+			slidesPerView: 1.6,
+		},
+		// when window width is >= 1200px
+		1200: {
+			slidesPerView: 1.8,
+		},
+		// when window width is >= 1400px
+		1400: {
+			slidesPerView: 1.97,
+		},
+	},
 });
 
 
