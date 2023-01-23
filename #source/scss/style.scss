@@ -571,6 +571,13 @@ h2 {
 					max-width: 590px;
 				}
 			}
+			.last-text {
+				padding: 150px 62px 150px 60px;
+
+				&__title {
+					max-width: 430px;
+				}
+			}
 		}
 	}
 }
@@ -641,6 +648,16 @@ h2 {
 			.swiper-2 {
 				.swiper-pagination {
 					bottom: 50px;
+				}
+			}
+			.last-text {
+				padding: 120px 46px 120px 45px;
+
+				&__title {
+					max-width: 380px;
+				}
+				&__text{
+					line-height: 34px;
 				}
 			}
 		}
@@ -733,6 +750,16 @@ h2 {
 
 				.swiper-pagination {
 					bottom: 45px;
+				}
+			}
+			.last-text {
+				padding: 90px 32px 90px 30px;
+
+				&__title {
+					max-width: 310px;
+				}
+				&__text{
+					line-height: 28px;
 				}
 			}
 		}
@@ -904,6 +931,17 @@ h2 {
 					bottom: 30px;
 				}
 			}
+			.last-text {
+				padding: 50px 20px 50px 20px;
+				gap: 0 11px;
+
+				&__title {
+					max-width: 270px;
+				}
+				&__text{
+					line-height: 24px;
+				}
+			}
 		}
 	}
 	._open-burger-menu {
@@ -1071,6 +1109,20 @@ h2 {
 
 				.swiper-pagination {
 					bottom: 15px;
+				}
+			}
+			.last-text {
+				padding: 60px 15px 60px 15px;
+				grid-template-columns: 1fr;	
+				gap: 10px 0;
+
+				&__title {
+					max-width: 415px;
+					text-align: center;
+					justify-self: center;
+				}
+				&__text{
+					line-height: 26px;
 				}
 			}
 		}

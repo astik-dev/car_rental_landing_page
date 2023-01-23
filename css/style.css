@@ -603,6 +603,12 @@ h2 {
 	.wrapper .main .motivational-text__text {
 		max-width: 590px;
 	}
+	.wrapper .main .last-text {
+		padding: 150px 62px 150px 60px;
+	}
+	.wrapper .main .last-text__title {
+		max-width: 430px;
+	}
 }
 @media (max-width: 1199px) {
 	h2 {
@@ -660,6 +666,15 @@ h2 {
 	}
 	.wrapper .main .swiper-2 .swiper-pagination {
 		bottom: 50px;
+	}
+	.wrapper .main .last-text {
+		padding: 120px 46px 120px 45px;
+	}
+	.wrapper .main .last-text__title {
+		max-width: 380px;
+	}
+	.wrapper .main .last-text__text {
+		line-height: 34px;
 	}
 }
 @media (max-width: 991px) {
@@ -737,6 +752,15 @@ h2 {
 	}
 	.wrapper .main .swiper-2 .swiper-pagination {
 		bottom: 45px;
+	}
+	.wrapper .main .last-text {
+		padding: 90px 32px 90px 30px;
+	}
+	.wrapper .main .last-text__title {
+		max-width: 310px;
+	}
+	.wrapper .main .last-text__text {
+		line-height: 28px;
 	}
 }
 @media (max-width: 767px) {
@@ -904,6 +928,16 @@ h2 {
 	.wrapper .main .swiper-2 .swiper-pagination {
 		bottom: 30px;
 	}
+	.wrapper .main .last-text {
+		padding: 50px 20px 50px 20px;
+		gap: 0 11px;
+	}
+	.wrapper .main .last-text__title {
+		max-width: 270px;
+	}
+	.wrapper .main .last-text__text {
+		line-height: 24px;
+	}
 	._open-burger-menu {
 		overflow-y: hidden;
 	}
@@ -1057,6 +1091,21 @@ h2 {
 	}
 	.wrapper .main .swiper-2 .swiper-pagination {
 		bottom: 15px;
+	}
+	.wrapper .main .last-text {
+		padding: 60px 15px 60px 15px;
+		-ms-grid-columns: 1fr;
+		grid-template-columns: 1fr;
+		gap: 10px 0;
+	}
+	.wrapper .main .last-text__title {
+		max-width: 415px;
+		text-align: center;
+		-ms-grid-column-align: center;
+		    justify-self: center;
+	}
+	.wrapper .main .last-text__text {
+		line-height: 26px;
 	}
 }
 @media (max-width: 575px){
