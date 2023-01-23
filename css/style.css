@@ -447,6 +447,7 @@ h2 {
 	padding: 0 82px 0 80px;
 }
 .wrapper .main .motivational-text {
+	background-color: #000;
 	padding: 68px 82px 68px 80px;
 	text-align: center;
 	text-transform: uppercase;

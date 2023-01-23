@@ -70,7 +70,6 @@ const mainSwiper2 = new Swiper(".swiper-2_container", {
 	grabCursor: true,
 	resistanceRatio: 0,
 });
-const mainSwiper2Container = document.querySelector(".swiper-2");
 
 
 
@@ -103,8 +102,8 @@ window.addEventListener("resize", function (event) {
 		menu.style.height = window.innerHeight + window.pageYOffset + "px";
 	}
 
-	// Main swiper-2 "left" value
-	mainSwiper2LeftValue();
+	// Set width outside of container: main__swiper-2, main__motivational-text
+	setWidthOutsideOfContainer();
 });
 
 
@@ -130,12 +129,17 @@ lazyImages.forEach(image => lazyImagesObserver.observe(image));
 
 
 
-// Main swiper-2 "left" value
-function mainSwiper2LeftValue() {
+// Set width outside of container: main__swiper-2, main__motivational-text
+const mainSwiper2Container = document.querySelector(".swiper-2");
+const mainMotivationalText = document.querySelector(".motivational-text");
+function setWidthOutsideOfContainer() {
 	if (window.innerWidth >= 1920) {
-		mainSwiper2Container.style.left = ((window.innerWidth - 1920) / 2) * (-1) + "px";
+		let value = ((window.innerWidth - 1920) / 2) * (-1);
+		mainSwiper2Container.style.left = value + "px";
+		mainMotivationalText.style.margin = "0 " + value + "px";
 	} else {
 		mainSwiper2Container.style.left = "0px";
+		mainMotivationalText.style.margin = "0px";
 	}
 }
-mainSwiper2LeftValue();
+setWidthOutsideOfContainer();
