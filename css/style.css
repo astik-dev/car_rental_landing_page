@@ -621,6 +621,9 @@ h2 {
 	text-transform: uppercase;
 	color: #fff;
 }
+.wrapper .footer__link a:active {
+	text-decoration: underline;
+}
 .wrapper .footer__rights {
 	border-top: 1px solid #fff;
 	padding: 65px 80px 74px 80px;
@@ -644,6 +647,9 @@ h2 {
 .wrapper .footer__rights-link a {
 	color: #fff;
 }
+.wrapper .footer__rights-link a:active {
+	text-decoration: underline;
+}
 
 @media (hover: hover) {
 	.wrapper .header__button-link:hover {
@@ -664,6 +670,9 @@ h2 {
 	.wrapper .main .gallery__button:hover {
 		background-color: #FF8A00;
 		color: #FFF;
+	}
+	.wrapper .footer__link a:hover, .wrapper .footer__rights-link a:hover {
+		text-decoration: underline;
 	}
 }
 @media (min-height: 461px) {

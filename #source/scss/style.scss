@@ -545,6 +545,10 @@ h2 {
 			line-height: 20px;
 			text-transform: uppercase;
 			color: #fff;
+
+			&:active {
+				text-decoration: underline;
+			}
 		}
 
 		&__rights {
@@ -565,6 +569,10 @@ h2 {
 		}
 		&__rights-link a {
 			color: #fff;
+
+			&:active {
+				text-decoration: underline;
+			}
 		}
 	}
 }
@@ -605,6 +613,13 @@ h2 {
 					background-color: #FF8A00;
 					color: #FFF;
 				}
+			}
+		}
+
+		.footer {
+			&__link a:hover,
+			&__rights-link a:hover {
+				text-decoration: underline;
 			}
 		}
 	}
