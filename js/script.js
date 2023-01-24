@@ -133,8 +133,9 @@ lazyImages.forEach(image => lazyImagesObserver.observe(image));
 const mainSwiper2Container = document.querySelector(".swiper-2");
 const mainMotivationalText = document.querySelector(".motivational-text");
 function setWidthOutsideOfContainer() {
-	if (window.innerWidth >= 1920) {
-		let value = ((window.innerWidth - 1920) / 2) * (-1);
+	mainSwiper2Container.style.width = document.documentElement.clientWidth + "px";
+	if (document.documentElement.clientWidth >= 1920) {
+		let value = ((document.documentElement.clientWidth - 1920) / 2) * (-1);
 		mainSwiper2Container.style.left = value + "px";
 		mainMotivationalText.style.margin = "0 " + value + "px";
 	} else {
