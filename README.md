@@ -2,7 +2,7 @@
 
 ### **Description:**
 Responsive **car rental landing page Vendugo (Adventure do and go)** from *Figma*.  
-Link: https://ast-astik.github.io/car_rental_landing_page/
+Link: https://astik-dev.github.io/car_rental_landing_page/
 
 ### **Functional:**
 1. #### SwiperJS sliders.
