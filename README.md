@@ -1,20 +1,14 @@
 # Car rental landing page
 
-### **Description:**
-Responsive **car rental landing page Vendugo (Adventure do and go)** from *Figma*.  
-Link: https://astik-dev.github.io/car_rental_landing_page/
+Responsive car rental landing page "Vendugo" built using HTML, SCSS, and JavaScript, based on a Figma design.
 
-### **Functional:**
-1. #### SwiperJS sliders.
-1. #### Lazy loading images to speed up page loading.
-1. #### Hovering the mouse over interactive elements adds animated effects.
-1. #### Hide menu and show hamburger menu for mobile screens.
-1. #### Responsiveness for different screen sizes.
+## Features
+- [SwiperJS](https://swiperjs.com/) sliders
+- Lazy loading of images using [IntersectionObserver](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) for faster page loading
+- Interactive hover effects on buttons and other elements
+- Hamburger menu for mobile screens
 
-### **Technologies:**
-- **HTML5**
-- **CSS3 (SCSS, FLEXBOX, GRID)**
-- **JavaScript (SwiperJS, IntersectionObserver)**
-- **BEM**
-- **Responsiveness**
-- **Lazy loading images**
+## Design
+Design by [Radithya Bintang](https://www.figma.com/community/file/1052858128969739459/vendugo-car-rental-landing-page)  
+Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)  
+Modifications: Yes
